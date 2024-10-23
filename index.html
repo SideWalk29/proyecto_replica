@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <p class="title">
+            START BOOTSTRAP
+        </p>
+        <nav>
+            <ul>
+            <li class="menu"><a href="">PORTFOLIO</a></li>
+            <li class="menu"><a href="">ABOUT</a></li>
+            <li class="menu"><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="aqua1">
+        <img src="avataaars.svg" class="avatar">
+        <p class="starttitle">START BOOTSTRAP</p>
+        <img src="LineStar.png" class="starW">
+        <p class="GraphicArtist">Graphic Artist - Web Designer - Illustrator</p>
+    </div>
+ 
+    <div class="blanco1">
+        <h2 class="portfolioH2">PORTFOLIO</h2>
+        <img src="LineStarB.png" class="starB">
+        <div class="imagesT">
+        <img src="cabin.png" height="100px" width="150px">
+        <img src="cake.png" height="100px" width="150px">
+        <img src="circus.png" height="100px" width="150px">
+        <img src="game.png" height="100px" width="150px">
+        <img src="safe.png" height="100px" width="150px">
+        <img src="submarine.png" height="100px" width="150px">
+    </div>
+</div>
+    <div class="aqua2">
+        <h2 class="AboutH2">ABOUT</h2>
+        <img src="LineStar.png" class="starW">
+        <div class="containerP">
+        <p>Freelancer is a free bootstrap theme created by Start booststrap. The download includes the complete sources file including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+        <p>You can create your own custom avatar for the masthead, change the icon in the dividers and add your email address to the contact form to make it fully functional!</p>
+    </div>
+        <button class="buttonDownload">Free Download!</button>
+    </div>
+    <div class="blanco3">
+        <h2 class="contactH2">CONTACT ME</h2>
+        <img src="LineStarB.png" class="starB">
+    </div>
+    <form class="WForm" action="/submit-form.php" method="POST" >
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="PhoneNumber">Phone Number</label>
+        <input type="PhoneNumber" id="PhoneNumber" name="PhoneNumber" required>
+
+        <label for="Message">Message</label>
+        <input type="Message" id="Message" name="Message" required>
+
+        <button type="submit" class="submit_button">Send</button>
+    </form>
+</main>
+<footer>
+    <nav>
+        <ul>
+        <li class="menu"><a href="">PORTFOLIO</a></li>
+        <li class="menu"><a href="">ABOUT</a></li>
+        <li class="menu"><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
