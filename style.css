@@ -11,18 +11,29 @@ header {
     color: white;
 
 }
-nav ul {
+.ul1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav ul li {
+.menu1 {
     margin: 0.7rem;
     list-style: none;
     margin-top: 1.8rem;
 }
 
+.ulfooter {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lifooter {
+    margin: 0.7rem;
+    list-style: none;
+    margin-top: 1.8rem;
+}
 
 footer {
     background-color:#2C3E50;
@@ -89,6 +100,13 @@ a {
 
 .portfolioH2 {
     padding-top: 30px;
+}
+
+.imagesT img {
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    display: grid;
 }
 
 .starttitle {
@@ -208,13 +226,22 @@ gap: 50px;
 
 .location1 {
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+
+
 
 }
 
 .FreelanceText {
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+
 }
 
 .FreeLast {
     color: #1ABC9C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
 }
