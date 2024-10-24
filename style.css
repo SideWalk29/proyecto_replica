@@ -125,7 +125,6 @@ a {
 }
 
 .imagesT {
-    border-radius: 500px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -197,4 +196,25 @@ gap: 50px;
     width: 80px;
     height: 40px;
     color: white;
+}
+
+
+.imglogos {
+    display: flex;
+    height: 30px;
+    width: 50px;
+    gap: 10px;
+}
+
+.location1 {
+    color: white;
+
+}
+
+.FreelanceText {
+    color: white;
+}
+
+.FreeLast {
+    color: #1ABC9C;
 }
