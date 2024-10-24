@@ -13,32 +13,50 @@ header {
 }
 .ul1 {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .menu1 {
     margin: 0.7rem;
     list-style: none;
-    margin-top: 1.8rem;
+    margin-top: 2rem;
 }
 
-.ulfooter {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.lifooter {
-    margin: 0.7rem;
-    list-style: none;
-    margin-top: 1.8rem;
+footer div div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer {
     background-color:#2C3E50;
     min-height: 7rem;
+    color: white;
+    padding-bottom: 20px;
 }
+
+.p2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.copyright1  {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+
+}
+
+.imglogos img {
+    flex-direction: row;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 0 0 ;
+}
+
 
 a {
     text-decoration: none;
@@ -48,13 +66,13 @@ h2  {
     font-size: 35px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     padding-top: 5rem;
 }
 
 .title {
-    font-size: 30px;
-    margin-top: 1.25rem;
+    font-size: 25px;
+    align-content: center;
     font-weight: 1000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -103,10 +121,10 @@ a {
 }
 
 .imagesT img {
-    height: 150px;
-    width: 200px;
-    border-radius: 10px;
-    display: grid;
+    width: 40%;
+    max-width: 150px;
+    border-radius: 5px;
+    justify-content: space-around;
 }
 
 .starttitle {
@@ -155,7 +173,7 @@ a {
 
 .AboutH2 {
     padding-top: 20px;
-    color: white
+    color: white;
 }
 
 
@@ -167,18 +185,21 @@ a {
     margin: 0 auto;
     border-color: white;
     background-color: transparent;
+    border-style: solid ;
     border-radius: 5px;
     width: 130px;
     height: 40px;
+    cursor: pointer;
 }
 
-
-
+.buttonDownload:hover {
+    transform: scale(0.90);
+    background-color: rgba(255, 255, 255, 0.096);
+}
 
 .contactH2 {
     padding-top: 30px;
 }
-
 
 .containerP {
 padding-bottom: 10px;
@@ -201,7 +222,8 @@ gap: 50px;
     width:200px;
     margin: 0 auto;
     text-align: left;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 .submit_button {
@@ -209,20 +231,23 @@ gap: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
     background-color:#1ABC9C;
-    border-color:#1ABC9C ;
-    border-radius: 5px;
-    width: 80px;
+    border-color:#1ABC9C;
+    border-style: solid;
+    border-radius: 4px;
+    width: 180px;
     height: 40px;
     color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.submit_button:hover  {
+    transform: scale(0.9);
+    background-color: #06a786;
+
 }
 
 
-.imglogos {
-    display: flex;
-    height: 30px;
-    width: 50px;
-    gap: 10px;
-}
 
 .location1 {
     color: white;
@@ -244,4 +269,74 @@ gap: 50px;
     color: #1ABC9C;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    .title {
+        font-size: 12px;
+        align-content: center;
+        font-weight: 1000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .menu1 {
+        font-size: 10px;
+        margin: 0.2rem;
+        list-style: none;
+        align-items: center;
+        margin-top: 2.1rem;
+    }
+    
+    .starttitle {
+        color: white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    .GraphicArtist {
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+
+    .imglogos img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .imagesT img {
+        width: 25%;
+        max-width: 150px;
+        border-radius: 5px;
+        justify-content: space-around;
+    }
+    
+    .AboutH2 {
+        padding-top: 20px;
+        color: white;
+        font-size: 25px;
+    }
+
+    .containerP {
+        padding-bottom: 10px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        display: flex; 
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 80%;
+        padding-bottom: 30px;
+        gap: 50px;
+        font-size: 12px;
+        }
+
+    footer div div h2 {
+        font-size: 15px;
+    }
 }
