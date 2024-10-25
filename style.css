@@ -21,16 +21,46 @@ header {
     margin-top: 2rem;
 }
 
-footer div div {
+footer {
+    background-color: #2C3E50;
+    padding: 0 0 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-footer {
-    background-color:#2C3E50;
-    min-height: 7rem;
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.imglogos {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+footer div {
+    padding: 0 8px 0 8px;
+}
+
+.copyright1 {
+    font-size: 0.9rem;
     color: white;
-    padding-bottom: 20px;
 }
 
 .p2 {
@@ -120,13 +150,6 @@ a {
     padding-top: 30px;
 }
 
-.imagesT img {
-    width: 40%;
-    max-width: 150px;
-    border-radius: 5px;
-    justify-content: space-around;
-}
-
 .starttitle {
     color: white;
     text-align: center;
@@ -162,13 +185,19 @@ a {
 
 .imagesT {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center the images horizontally */
+    margin: 25px 0; /* Top and bottom margin */
+    padding: 0 50px; /* Left and right padding */
+}
 
+.imagesT img {
+    max-width: 150px; /* Maximum width for each image */
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    flex: 1 0 30%; /* Allows flexibility, adjust the 30% as needed */
 }
 
 .AboutH2 {
@@ -273,7 +302,7 @@ gap: 50px;
 
 
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 500px) {
     .title {
         font-size: 12px;
         align-content: center;
@@ -302,11 +331,6 @@ gap: 50px;
         font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
-    }
-
-    .imglogos img {
-        height: 20px;
-        width: 20px;
     }
 
     .imagesT img {
@@ -339,4 +363,48 @@ gap: 50px;
     footer div div h2 {
         font-size: 15px;
     }
+    footer {
+        background-color: #2C3E50;
+        color: white;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .footer-column {
+        flex: 1;
+    }
+    
+    .footer-column h2 {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .imglogos {
+        display: flex;
+        justify-content: center;  
+        align-items: center;     
+    }
+    
+    
+    .footer-bottom {
+        margin-top: 20px;
+    }
+    
+    .copyright1 {
+        font-size: 0.7rem;
+        color: white;
+    }
+    .p2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
 }
